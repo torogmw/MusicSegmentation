@@ -1,0 +1,12 @@
+%output the detection result
+fout = fopen('Result.txt', 'w');
+
+ctime = chorusdetection('C:\Users\Cheerz\Desktop\07. Viva La Vida.wav');
+
+%output the result to result.txt
+fprintf(fout, '%s', 
+for i = 1:4
+    fprintf(fout, '%f', ctime(i));
+    fprintf(fout, '%s', ' ');
+end
+    
